@@ -59,6 +59,9 @@ function checkWin() {
     return winConditions.some(condition => {
         const [a, b, c] = condition;
         return board[a] && board[a] === board[b] && board[b] === board[c];
+
+        createBoard();
+
     });
 }
 
